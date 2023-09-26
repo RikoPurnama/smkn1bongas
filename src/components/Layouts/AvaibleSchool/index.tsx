@@ -7,7 +7,7 @@ const AvaibleAtSchool = () => {
   return (
     <section className="text-light bg-semiDark">
       <div className="container mx-auto lg:px-32">
-        <div className="w-full h-80 px-4 relative">
+        <div className="w-full h-80 px-4 relative mx-auto">
           <div className="w-full mx-auto flex gap-8 absolute -top-[25%]">
             <div className="w-full max-w-[10rem] h-[12rem] bg-primary rounded-2xl flex items-center justify-center flex-col">
               <FaUsers className="w-10 h-10 pb-2" />
