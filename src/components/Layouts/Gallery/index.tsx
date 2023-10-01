@@ -21,7 +21,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section className="py-28 bg-dark">
+    <section className="py-24 md:pb-48 bg-dark">
       <div className="container mx-auto lg:px-32">
         <div className="w-full">
 

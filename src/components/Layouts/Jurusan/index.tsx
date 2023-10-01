@@ -23,7 +23,7 @@ const Jurusan = () => {
   }, []);
 
   return (
-    <section className="py-24 bg-semiDark">
+    <section className="py-20 bg-semiDark">
       <div className="container mx-auto lg:px-32">
         <div className="w-full flex flex-wrap">
           <div className="w-full md:w-1/2 px-6">

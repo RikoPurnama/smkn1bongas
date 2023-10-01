@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={`w-full ${fixed} z-[99999]  text-light`}>
+      <header className={`w-full ${fixed} z-[99999] text-light`}>
         <div className="container mx-auto lg:px-32">
           <div className="w-full px-6 py-2 flex items-center justify-between relative">
               <a href="#" className="text-md lg:text-xl font-bold gap-1 py-4">

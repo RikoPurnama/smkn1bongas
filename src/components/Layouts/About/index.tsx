@@ -16,18 +16,18 @@ const About = () => {
                 <div className="flex flex-col gap-3">
                   <div
                     style={{ backgroundImage: "url(/about.png)" }}
-                    className="w-[100px] md:w-[150px] md:h-[210px] lg:w-[200px] h-[160px] lg:h-[255px] object-cover bg-cover bg-center rounded-2xl"
+                    className="w-[130px] md:w-[150px] md:h-[210px] lg:w-[200px] h-[160px] lg:h-[255px] object-cover bg-cover bg-center rounded-2xl"
                   ></div>
 
                   <div
                     style={{ backgroundImage: "url(/about.png)" }}
-                    className="w-[100px] md:w-[150px] md:h-[210px] lg:w-[200px] h-[160px] lg:h-[255px] object-cover bg-cover bg-center rounded-2xl"
+                    className="w-[130px] md:w-[150px] md:h-[210px] lg:w-[200px] h-[160px] lg:h-[255px] object-cover bg-cover bg-center rounded-2xl"
                   ></div>
                 </div>
 
                 <div
                   style={{ backgroundImage: "url(/about.png)" }}
-                  className="w-[100px] md:w-[150px] md:h-[210px] lg:w-[200px] h-[160px] lg:h-[255px] object-cover bg-cover bg-center rounded-2xl"
+                  className="w-[130px] md:w-[150px] md:h-[210px] lg:w-[200px] h-[160px] lg:h-[255px] object-cover bg-cover bg-center rounded-2xl"
                 ></div>
               </div>
 
