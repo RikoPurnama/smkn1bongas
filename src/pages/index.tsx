@@ -4,6 +4,7 @@ import Companies from "@/components/Layouts/Companies";
 import Gallery from "@/components/Layouts/Gallery";
 import HomePage from "@/components/Layouts/Home";
 import Jurusan from "@/components/Layouts/Jurusan";
+import Quote from "@/components/Layouts/Quote";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Jurusan />
       <Gallery />
       <AvaibleAtSchool />
+      <Quote />
       <Companies />
     </>
   );
