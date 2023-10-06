@@ -65,11 +65,11 @@ const Header = () => {
               className={`w-full lg:w-auto ${openNav} lg:scale-100 absolute lg:static left-0 top-full bg-nav lg:bg-transparent rounded-b-2xl`}
             >
               <ul className="w-full py-6 flex flex-col items-center gap-2 rounded-lg lg:flex lg:flex-row lg:gap-8 lg:scale-100 lg:static lg:py-0">
-                <li className="group relative py-6">
+                <li className="group relative lg:py-6">
                   <Link href="/" className="hover:text-grey">
                     Beranda
                   </Link>
-                  <div className=" hidden group-hover:block bg-nav py-4 px-10 absolute top-[100%] rounded-b-lg">
+                  <div className="hidden scale-0 group-hover:scale-100 group-hover:block lg:bg-nav py-4 px-10 lg:absolute top-[100%] rounded-b-lg ">
                     <ul className="flex flex-col gap-3">
                       <li>
                         <Link href="/#about" className="hover:text-grey">
@@ -99,12 +99,12 @@ const Header = () => {
                     </ul>
                   </div>
                 </li>
-                <li>
+                <li className="lg:py-6">
                   <Link href="/about" className="hover:text-grey">
                     Tentang
                   </Link>
                 </li>
-                <li>
+                <li className="lg:py-6">
                   <Link href="/jurusan" className="hover:text-grey">
                     Jurusan
                   </Link>
