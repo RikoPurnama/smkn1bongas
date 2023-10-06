@@ -10,7 +10,7 @@ const Gallery = () => {
   const [datas, setDatas] = useState([]);
 
   const getData = async () => {
-    const response = await fetch("/api/images");
+    const response = await fetch("/api/data");
     const datas = await response.json();
     const data = datas.Gallery;
     setDatas(data);
@@ -21,7 +21,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section className="py-24 md:pb-48 bg-dark">
+    <section id="gallery" className="py-24 md:pb-48 bg-dark">
       <div className="container mx-auto lg:px-44">
         <div className="w-full">
 

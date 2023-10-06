@@ -5,7 +5,7 @@ import { BsFillBookmarkDashFill } from "react-icons/bs";
 
 const AvaibleAtSchool = () => {
   return (
-    <section className="text-light py-4 bg-semiDark">
+    <section id="sekolah" className="text-light py-4 bg-semiDark">
       <div className="container mx-auto lg:px-44">
         <div className="w-full lg:h-44 px-4 mx-auto">
           <div className="flex flex-wrap justify-center gap-4 md:gap-16">

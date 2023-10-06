@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "@/components/Button";
 import Link from "next/link";
+import Gallery from '../Gallery/index';
 const Header = () => {
   const [scroll, setScroll] = useState(false);
   const fixedHeader = () => {
@@ -39,7 +40,7 @@ const Header = () => {
     <>
       <header className={`w-full ${fixed} z-[99999] text-light`}>
         <div className="container mx-auto lg:px-44">
-          <div className="w-full px-6 py-2 flex items-center justify-between relative">
+          <div className="w-full px-6 flex items-center justify-between relative">
               <Link href="/" className="text-md lg:text-xl font-bold gap-1 py-4">
                 SMK Negeri 1 Bongas{" "}
                 <span className="text-sm font-thin text-grey">4.0</span>
@@ -63,11 +64,40 @@ const Header = () => {
             <nav
               className={`w-full lg:w-auto ${openNav} lg:scale-100 absolute lg:static left-0 top-full bg-nav lg:bg-transparent rounded-b-2xl`}
             >
-              <ul className="w-full py-6 flex flex-col items-center gap-2 rounded-lg lg:flex lg:flex-row lg:gap-4 lg:scale-100 lg:static lg:py-4">
-                <li>
+              <ul className="w-full py-6 flex flex-col items-center gap-2 rounded-lg lg:flex lg:flex-row lg:gap-8 lg:scale-100 lg:static lg:py-0">
+                <li className="group relative py-6">
                   <Link href="/" className="hover:text-grey">
-                    Home
+                    Beranda
                   </Link>
+                  <div className=" hidden group-hover:block bg-nav py-4 px-10 absolute top-[100%] rounded-b-lg">
+                    <ul className="flex flex-col gap-3">
+                      <li>
+                        <Link href="/#about" className="hover:text-grey">
+                          Tentang
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/#jurusan" className="hover:text-grey">
+                          Jurusan
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/#gallery" className="hover:text-grey">
+                          Gallery
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/#sekolah" className="hover:text-grey w-full">
+                          Fasilitas sekolah
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/#quote" className="hover:text-grey">
+                          Alumni
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
                   <Link href="/about" className="hover:text-grey">
@@ -81,10 +111,6 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <Button
-              buttonText="Contact"
-              coloring="bg-primary hidden lg:block"
-            />
           </div>
         </div>
       </header>

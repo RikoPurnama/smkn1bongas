@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 
 const Quote = () => {
   return (
-    <section className="py-20 bg-semiDark">
+    <section id="quote" className="py-20 bg-semiDark">
       <div className="container mx-auto lg:px-44">
         <div className="w-full">
           <div className="px-4">

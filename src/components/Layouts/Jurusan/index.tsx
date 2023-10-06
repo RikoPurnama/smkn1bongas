@@ -7,13 +7,15 @@ type jurusanType = {
   fullname: string;
   image: string;
   url: string;
+  desc: string;
+  materi: string[];
 };
 
 const Jurusan = () => {
   const [datas, setDatas] = useState([]);
 
   const getData = async () => {
-    const response = await fetch("/api/images");
+    const response = await fetch("/api/data");
     const datas = await response.json();
     const data = datas.jurusan;
     setDatas(data);

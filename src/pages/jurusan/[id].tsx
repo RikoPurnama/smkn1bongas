@@ -5,7 +5,7 @@ import LinkProfile from "@/components/Fragments/LinkProfile";
 const DetailjurusanPage = () => {
   const [data, setData] = useState([]);
   const getData = async () => {
-    const res = await fetch("/api/images");
+    const res = await fetch("/api/data");
     const responses = await res.json();
     const data = responses.jurusan;
     setData(data);
@@ -25,10 +25,11 @@ const DetailjurusanPage = () => {
           {data
             .filter((data: any) => data.url === id)
             .map((data: any) => (
-              <div key={data.id} className="py-16">
+              <div key={data.id} className="py-16 text-light">
                 <h2 className="text-xl font-bold text-light">{data.name}</h2>
                 <p className="text-base text-primary py-2">{data.fullname}</p>
-                <p className="text-base text-grey max-w-xl py-4 pb-20">
+                <p className="text-base text-grey max-w-xl py-4 ">
+                  
                   TKJ adalah sebuah program ilmu kejuruan dibidang teknologi
                   informasi dan komunikasi yang berhubungan dengan kemampuan
                   pemrograman komputer, perakitan komputer dan jaringan
@@ -43,6 +44,24 @@ const DetailjurusanPage = () => {
                   karena tidak seimbang nya antara tuntutan kebutuhan SDM dalam
                   dunia IT dengan jumlah tenaga kerja yang tersedia.
                 </p>
+                <h2 className="text-xl font-medium">Materi Keahlian</h2>
+                <ol className="list-decimal p-4 pb-8">
+                  <li>
+                    <p>Administrasi Jaringan (LAN-WAN)</p>
+                  </li>
+                  <li>
+                    <p>Teknik Komputer (Hardware dan Software)</p>
+                  </li>
+                  <li>
+                    <p>Service Jaringan Komputer</p>
+                  </li>
+                  <li>
+                    <p>Instalasi Server dan Client</p>
+                  </li>
+                  <li>
+                    <p>Pemograman web</p>
+                  </li>
+                </ol>
                 <div style={{ backgroundImage: `url(${data.image})` }} className="w-full h-96 bg-cover bg-center"></div>
               </div>
             ))}
