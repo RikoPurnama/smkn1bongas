@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Button from "@/components/Button";
+import Link from "next/link";
 const Header = () => {
   const [scroll, setScroll] = useState(false);
   const fixedHeader = () => {
@@ -39,10 +40,10 @@ const Header = () => {
       <header className={`w-full ${fixed} z-[99999] text-light`}>
         <div className="container mx-auto lg:px-44">
           <div className="w-full px-6 py-2 flex items-center justify-between relative">
-              <a href="#" className="text-md lg:text-xl font-bold gap-1 py-4">
+              <Link href="/" className="text-md lg:text-xl font-bold gap-1 py-4">
                 SMK Negeri 1 Bongas{" "}
                 <span className="text-sm font-thin text-grey">4.0</span>
-              </a>
+              </Link>
 
               <button
                 onClick={() => handleToggle()}
@@ -64,19 +65,19 @@ const Header = () => {
             >
               <ul className="w-full py-6 flex flex-col items-center gap-2 rounded-lg lg:flex lg:flex-row lg:gap-4 lg:scale-100 lg:static lg:py-4">
                 <li>
-                  <a href="#" className="hover:text-grey">
+                  <Link href="/" className="hover:text-grey">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-grey">
+                  <Link href="/about" className="hover:text-grey">
                     Tentang
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-grey">
+                  <Link href="/jurusan" className="hover:text-grey">
                     Jurusan
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>

@@ -1,16 +1,19 @@
+import Link from "next/link";
 import React from "react";
 
 type cardType = {
   name: string;
   fullname: string;
   image: string;
+  url: string
 };
 
 const Card = (props: cardType) => {
-  const { name, fullname, image } = props;
+  const { name, fullname, image, url } = props;
   return (
     <>
       <div className="w-full mt-8">
+        <Link href={`/jurusan/${url}`}>
         <div
           style={{ backgroundImage: `url(${image})` }}
           className="w-full max-w-[515px] h-[270px] bg-center bg-cover object-cover rounded-3xl"
@@ -22,6 +25,7 @@ const Card = (props: cardType) => {
           </p>
         </div>
         <h3 className="text-xl font-bold text-light py-2">{fullname}</h3>
+        </Link>
       </div>
     </>
   );

@@ -7,6 +7,7 @@ type Data = {
     id: number
     name: string
     fullname: string
+    url: string
     image: string
   }[],
   Gallery: {
@@ -25,24 +26,28 @@ export default function handler(
       id: 1,
       name: "TJKT",
       fullname: "Teknik Jaringan Komputer Telekomunikasi",
+      url: 'teknik-jaringan-komputer-telekomunikasi',
       image: "/background.jpg",
     },
     {
       id: 2,
       name: "PH",
       fullname: "Perhotelan",
+      url: 'perhotelan',
       image: "/ph.jpg",
     },
     {
       id: 3,
       name: "TKR",
       fullname: "Teknik Kendaraan Ringan",
+      url: 'teknik-kendaraan-ringan',
       image: "/tkro.jpg",
     },
     {
       id: 4,
       name: "TBSM",
       fullname: "Teknik Bisnis Sepeda Motor",
+      url: 'teknik-bisnis-sepeda-motor',
       image: "/tbsm.jpg",
     },
   ]

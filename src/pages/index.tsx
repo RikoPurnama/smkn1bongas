@@ -15,7 +15,6 @@ export default function Home() {
       <Gallery />
       <AvaibleAtSchool />
       <Quote />
-      <Companies />
     </>
   );
 }

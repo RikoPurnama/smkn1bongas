@@ -6,6 +6,7 @@ type jurusanType = {
   name: string;
   fullname: string;
   image: string;
+  url: string;
 };
 
 const Jurusan = () => {
@@ -23,7 +24,7 @@ const Jurusan = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-semiDark">
+    <section id="jurusan" className="py-20 bg-semiDark">
       <div className="container mx-auto lg:px-44">
         <div className="w-full flex flex-wrap">
           <div className="w-full md:w-1/2 px-6">
@@ -44,6 +45,7 @@ const Jurusan = () => {
                   name={data.name}
                   fullname={data.fullname}
                   image={data.image}
+                  url={data.url}
                 />
               ))}
           </div>
@@ -56,6 +58,7 @@ const Jurusan = () => {
                   name={data.name}
                   fullname={data.fullname}
                   image={data.image}
+                  url={data.url}
                 />
               ))}
           </div>
