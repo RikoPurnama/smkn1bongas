@@ -7,14 +7,14 @@ const Home = () => {
     <>
       <section
         style={{ backgroundImage: "url(/background.jpg)" }}
-        className='w-full h-screen md:h-[65vh] lg:h-screen object-cover bg-top bg-cover before:content-[""] before:w-full before:h-screen before:md:h-[65vh] before:lg:h-screen before:absolute before:bg-transparentDark z-10'
+        className='w-full h-screen lg:h-screen absolute object-cover bg-top bg-cover before:content-[""] before:w-full before:h-screen before:lg:h-screen before:absolute before:bg-transparentDark'
       ></section>
 
-      <section className="absolute top-0 w-full h-screen md:h-[70vh] lg:h-screen pt-24 px-6 flex items-center flex-col overflow-hidden ">
+      <section className="relative top-0 w-full h-screen lg:h-screen pt-24 px-6 flex items-center flex-col overflow-hidden">
         <div className="w-full max-w-xl text-center flex flex-col items-center mt-10">
           <h3 className="text-base text-primary">Welcome To</h3>
           <h2 className="text-lg md:text-xl font-bold text-light ">SMK Negeri 1 Bongas</h2>
-          <h1 className="text-4xl md:text-4xl max-w-xl font-bold text-white py-1">
+          <h1 className="text-3xl md:text-4xl max-w-xl font-bold text-white py-1">
             Grow your skills to advance your career path
           </h1>
           <p className="text-base text-grey py-5">
@@ -26,7 +26,7 @@ const Home = () => {
 
         <div
           style={{ backgroundImage: "url(/background.jpg)" }}
-          className="w-full max-w-xl h-[18rem] relative translate-y-[20%] bg-cover bg-top object-cover rounded-t-3xl before:content-[''] before:w-full before:h-full before:max-w-[576px] before:absolute before:bg-dark before:opacity-50 before:rounded-t-3xl z-20"
+          className="w-full max-w-xl h-[18rem] md:max-w-lg absolute bottom-0 bg-cover bg-top object-cover rounded-t-3xl before:content-[''] before:w-full before:h-full before:max-w-[576px] before:absolute before:bg-dark before:opacity-50 before:rounded-t-3xl z-20"
         >
           <a
             href="#"
@@ -36,11 +36,11 @@ const Home = () => {
           </a>
         </div>
         <div
-          className="hidden md:block absolute w-24 h-28 -translate-x-[17.2rem] translate-y-[33rem] "
+          className="hidden md:block absolute w-24 h-28 -translate-x-[17.2rem] translate-y-[37rem] "
           style={{ backgroundImage: "url(/dash.png)" }}
         ></div>
         <div
-          className="hidden md:block absolute w-24 h-24 translate-x-[17rem] translate-y-[20rem] z-10 "
+          className="hidden md:block absolute w-24 h-24 translate-x-[17rem] translate-y-[22rem] z-10 "
           style={{ backgroundImage: "url(/dash.png)" }}
         ></div>
       </section>

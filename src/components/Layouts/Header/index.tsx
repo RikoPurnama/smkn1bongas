@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
-import Button from "@/components/Button";
 import Link from "next/link";
-import Gallery from '../Gallery/index';
+import { FaAngleDown } from "react-icons/fa";
+import LinkBeranda from "@/components/Link/Beranda";
+import LinkProgram from "@/components/Link/Program";
+import LinkAboutMe from "@/components/Link/AboutMe";
 const Header = () => {
   const [scroll, setScroll] = useState(false);
   const fixedHeader = () => {
@@ -15,9 +17,20 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => fixedHeader());
+
+    window.addEventListener("click", (e) => {
+      if (
+        e.target != document.querySelector(".nav") &&
+        e.target != document.querySelector(".nav-toggle")
+      ) {
+        setNav(false);
+      }
+    });
   });
 
-  const fixed = scroll ? "fixed bg-nav backdrop-blur-lg shadow-inner" : "absolute";
+  const fixed = scroll
+    ? "fixed bg-nav backdrop-blur-lg shadow-inner"
+    : "absolute";
 
   // for toggle nav
   const [nav, setNav] = useState(false);
@@ -41,73 +54,59 @@ const Header = () => {
       <header className={`w-full ${fixed} z-[99999] text-light`}>
         <div className="container mx-auto lg:px-44">
           <div className="w-full px-6 flex items-center justify-between relative">
-              <Link href="/" className="text-md lg:text-xl font-bold gap-1 py-4">
-                SMK Negeri 1 Bongas{" "}
-                <span className="text-sm font-thin text-grey">4.0</span>
-              </Link>
+            <Link href="/" className="text-md lg:text-xl font-bold gap-1 py-4">
+              SMK Negeri 1 Bongas{" "}
+              <span className="text-sm font-thin text-grey">4.0</span>
+            </Link>
 
-              <button
-                onClick={() => handleToggle()}
-                className="py-1 px-1 absolute right-4 lg:hidden"
-              >
-                <span
-                  className={`w-[25px] h-[1px] block bg-light ${toggleNavTop}`}
-                ></span>
-                <span
-                  className={`w-[25px] h-[1px] my-2 block bg-light ${toggleNavCenter}`}
-                ></span>
-                <span
-                  className={`w-[25px] h-[1px] block bg-light ${toggleNavBottom}`}
-                ></span>
-              </button>
+            <button
+              onClick={() => handleToggle()}
+              className="py-1 px-1 absolute right-4 lg:hidden nav-toggle"
+            >
+              <span
+                className={`w-[25px] h-[1px] block bg-light ${toggleNavTop}`}
+              ></span>
+              <span
+                className={`w-[25px] h-[1px] my-2 block bg-light ${toggleNavCenter}`}
+              ></span>
+              <span
+                className={`w-[25px] h-[1px] block bg-light ${toggleNavBottom}`}
+              ></span>
+            </button>
 
             <nav
-              className={`w-full lg:w-auto ${openNav} lg:scale-100 absolute lg:static left-0 top-full bg-nav lg:bg-transparent rounded-b-2xl`}
+              className={`w-full lg:w-auto ${openNav} lg:scale-100 absolute lg:static left-0 top-full bg-nav lg:bg-transparent rounded-b-2xl nav`}
             >
-              <ul className="w-full py-6 flex flex-col items-center gap-2 rounded-lg lg:flex lg:flex-row lg:gap-8 lg:scale-100 lg:static lg:py-0">
-                <li className="group relative lg:py-6">
-                  <Link href="/" className="hover:text-grey">
+              <ul className="w-full py-6 px-6 lg:px-0 flex flex-col items-center gap-2 rounded-lg lg:flex lg:flex-row lg:gap-8 lg:static lg:py-0">
+                <li className="group/beranda relative lg:py-6 w-full lg:w-auto">
+                  <Link
+                    href="/"
+                    className="hover:text-grey flex items-center gap-1 relative"
+                  >
                     Beranda
+                    <FaAngleDown className="w-4 h-4 group-hover/beranda:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out" />
                   </Link>
-                  <div className="hidden scale-0 group-hover:scale-100 group-hover:block lg:bg-nav py-4 px-10 lg:absolute top-[100%] rounded-b-lg ">
-                    <ul className="flex flex-col gap-3">
-                      <li>
-                        <Link href="/#about" className="hover:text-grey">
-                          Tentang
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/#jurusan" className="hover:text-grey">
-                          Jurusan
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/#gallery" className="hover:text-grey">
-                          Gallery
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/#sekolah" className="hover:text-grey w-full">
-                          Fasilitas sekolah
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/#quote" className="hover:text-grey">
-                          Alumni
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
+                  <LinkBeranda />
                 </li>
-                <li className="lg:py-6">
-                  <Link href="/about" className="hover:text-grey">
-                    Tentang
+                <li className="group/tentang relative lg:py-6 w-full lg:w-auto">
+                  <Link
+                    href="/#about"
+                    className="hover:text-grey flex items-center gap-1"
+                  >
+                    Tentang kami
+                    <FaAngleDown className="w-4 h-4 group-hover/tentang:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out" />
                   </Link>
+                  <LinkAboutMe />
                 </li>
-                <li className="lg:py-6">
-                  <Link href="/jurusan" className="hover:text-grey">
-                    Jurusan
+                <li className="group/program relative lg:py-6 w-full lg:w-auto">
+                  <Link
+                    href="#"
+                    className="hover:text-grey flex items-center gap-1"
+                  >
+                    Program
+                    <FaAngleDown className="w-4 h-4 group-hover/program:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out" />
                   </Link>
+                  <LinkProgram />
                 </li>
               </ul>
             </nav>
