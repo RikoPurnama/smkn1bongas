@@ -3,7 +3,7 @@ import React from "react";
 
 const LinkBeranda = () => {
   return (
-    <div className="w-52 hidden group-hover/beranda:block lg:bg-nav py-4 px-10 lg:absolute top-[100%] rounded-b-lg dropdown">
+    <div className="w-52 hidden group-hover/beranda:block lg:bg-nav py-4 px-10 lg:absolute top-[100%] rounded-b-lg">
       <ul className="flex flex-col gap-3">
         <li>
           <Link href="/#about" className="hover:text-grey">

@@ -3,7 +3,7 @@ import React from "react";
 
 const LinkAboutMe = () => {
   return (
-    <div className="w-56 hidden group-hover/tentang:block lg:bg-nav py-4 px-10 lg:absolute top-[100%] rounded-b-lg dropdown">
+    <div className="w-56 hidden group-hover/tentang:block lg:bg-nav py-4 px-10 lg:absolute top-[100%] rounded-b-lg">
       <ul className="flex flex-col gap-3">
         <li>
           <Link href="/profile" className="hover:text-grey">

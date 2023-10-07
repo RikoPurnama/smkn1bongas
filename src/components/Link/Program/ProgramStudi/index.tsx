@@ -7,7 +7,7 @@ const LinkProgramStudi = () => {
       <ul className="flex flex-col gap-3">
         <li>
           <Link
-            href="/jurusan/jaringan-komputer-telekomunikasi"
+            href="/jurusan/teknik-jaringan-komputer-telekomunikasi"
             className="hover:text-grey flex items-center gap-1"
           >
             Jaringan Komputer Telekomunikasi

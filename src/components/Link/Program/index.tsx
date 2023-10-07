@@ -5,12 +5,12 @@ import { FaAngleDown } from "react-icons/fa";
 
 const LinkProgram = () => {
   return (
-    <div className="w-64 hidden group-hover/program:block lg:bg-nav py-4 pl-10 lg:absolute top-[100%] lg:-translate-x-40 rounded-b-lg dropdown">
+    <div className="w-64 hidden group-hover/program:block lg:bg-nav py-4 pl-10 lg:absolute top-[100%] lg:-translate-x-40 rounded-b-lg">
       <ul className="flex flex-col gap-3">
         <li className="relative group/profile">
           <Link
             href="/#jurusan"
-            className="hover:text-grey flex items-center gap-1"
+            className="hover:text-grey flex items-center gap-1 profile"
           >
             Profile Program Studi
             <FaAngleDown className="w-4 h-4 -rotate-90 group-hover/profile:rotate-90 mt-1 group-hover:rotate-90 translate-x-1 transition duration-200 ease-in-out" />

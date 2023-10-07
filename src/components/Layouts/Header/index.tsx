@@ -21,7 +21,14 @@ const Header = () => {
     window.addEventListener("click", (e) => {
       if (
         e.target != document.querySelector(".nav") &&
-        e.target != document.querySelector(".nav-toggle")
+        e.target != document.querySelector(".nav-toggle") &&
+        e.target != document.querySelector(".beranda") &&
+        e.target != document.querySelector(".tentang") &&
+        e.target != document.querySelector(".program") &&
+        e.target != document.querySelector(".profile") &&
+        e.target != document.querySelector(".span1") &&
+        e.target != document.querySelector(".span2") &&
+        e.target != document.querySelector(".span3")
       ) {
         setNav(false);
       }
@@ -64,13 +71,13 @@ const Header = () => {
               className="py-1 px-1 absolute right-4 lg:hidden nav-toggle"
             >
               <span
-                className={`w-[25px] h-[1px] block bg-light ${toggleNavTop}`}
+                className={`w-[25px] h-[1px] block bg-light ${toggleNavTop} span1`}
               ></span>
               <span
-                className={`w-[25px] h-[1px] my-2 block bg-light ${toggleNavCenter}`}
+                className={`w-[25px] h-[1px] my-2 block bg-light ${toggleNavCenter} span2`}
               ></span>
               <span
-                className={`w-[25px] h-[1px] block bg-light ${toggleNavBottom}`}
+                className={`w-[25px] h-[1px] block bg-light ${toggleNavBottom} span3`}
               ></span>
             </button>
 
@@ -80,18 +87,18 @@ const Header = () => {
               <ul className="w-full py-6 px-6 lg:px-0 flex flex-col items-center gap-2 rounded-lg lg:flex lg:flex-row lg:gap-8 lg:static lg:py-0">
                 <li className="group/beranda relative lg:py-6 w-full lg:w-auto">
                   <Link
-                    href="/"
-                    className="hover:text-grey flex items-center gap-1 relative"
+                    href="#"
+                    className="hover:text-grey flex items-center gap-1 relative beranda"
                   >
                     Beranda
                     <FaAngleDown className="w-4 h-4 group-hover/beranda:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out" />
                   </Link>
                   <LinkBeranda />
                 </li>
-                <li className="group/tentang relative lg:py-6 w-full lg:w-auto">
+                <li className="group/tentang relative lg:py-6 w-full lg:w-auto ">
                   <Link
-                    href="/#about"
-                    className="hover:text-grey flex items-center gap-1"
+                    href="#"
+                    className="hover:text-grey flex items-center gap-1 tentang"
                   >
                     Tentang kami
                     <FaAngleDown className="w-4 h-4 group-hover/tentang:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out" />
@@ -101,7 +108,7 @@ const Header = () => {
                 <li className="group/program relative lg:py-6 w-full lg:w-auto">
                   <Link
                     href="#"
-                    className="hover:text-grey flex items-center gap-1"
+                    className="hover:text-grey flex items-center gap-1 program"
                   >
                     Program
                     <FaAngleDown className="w-4 h-4 group-hover/program:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out" />
