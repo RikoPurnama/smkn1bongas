@@ -26,7 +26,7 @@ const Home = () => {
 
         <div
           style={{ backgroundImage: "url(/background.jpg)" }}
-          className="w-full max-w-xl h-[18rem] md:max-w-lg absolute bottom-0 bg-cover bg-top object-cover rounded-t-3xl before:content-[''] before:w-full before:h-full before:max-w-[576px] before:absolute before:bg-dark before:opacity-50 before:rounded-t-3xl z-20"
+          className="w-full max-w-2xl h-[18rem] md:max-w-lg absolute bottom-0 bg-cover bg-top object-cover rounded-t-3xl before:content-[''] before:w-full before:h-full before:max-w-[672px] before:absolute before:bg-dark before:opacity-50 before:rounded-t-3xl z-20"
         >
           <a
             href="#"

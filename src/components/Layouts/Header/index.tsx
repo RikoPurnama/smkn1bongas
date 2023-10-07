@@ -87,31 +87,31 @@ const Header = () => {
               <ul className="w-full py-6 px-6 lg:px-0 flex flex-col items-center gap-2 rounded-lg lg:flex lg:flex-row lg:gap-8 lg:static lg:py-0">
                 <li className="group/beranda relative lg:py-6 w-full lg:w-auto">
                   <Link
-                    href="#"
+                    href=""
                     className="hover:text-grey flex items-center gap-1 relative beranda"
                   >
                     Beranda
-                    <FaAngleDown className="w-4 h-4 group-hover/beranda:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out" />
+                    <FaAngleDown className="w-4 h-4 group-hover/beranda:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out text-grey" />
                   </Link>
                   <LinkBeranda />
                 </li>
                 <li className="group/tentang relative lg:py-6 w-full lg:w-auto ">
                   <Link
-                    href="#"
+                    href=""
                     className="hover:text-grey flex items-center gap-1 tentang"
                   >
                     Tentang kami
-                    <FaAngleDown className="w-4 h-4 group-hover/tentang:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out" />
+                    <FaAngleDown className="w-4 h-4 group-hover/tentang:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out text-grey" />
                   </Link>
                   <LinkAboutMe />
                 </li>
                 <li className="group/program relative lg:py-6 w-full lg:w-auto">
                   <Link
-                    href="#"
+                    href=""
                     className="hover:text-grey flex items-center gap-1 program"
                   >
                     Program
-                    <FaAngleDown className="w-4 h-4 group-hover/program:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out" />
+                    <FaAngleDown className="w-4 h-4 group-hover/program:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out text-grey" />
                   </Link>
                   <LinkProgram />
                 </li>

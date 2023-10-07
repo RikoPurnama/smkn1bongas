@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -18,19 +20,19 @@ const Footer = () => {
               <h3 className="text-2xl font-bold pb-4">Link</h3>
               <ul className="ml-3 text-grey flex flex-col gap-2">
                 <li>
-                  <a href="#" className="hover:text-light">
+                  <Link href="/" className="hover:text-light">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-light">
+                  <Link href="/#about" className="hover:text-light">
                     Tentang
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-light">
+                  <Link href="/#jurusan" className="hover:text-light">
                     Jurusan
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -61,31 +63,35 @@ const Footer = () => {
               <p className="text-base text-grey">+62 800 0000 0000</p>
               <p className="text-base text-grey">@gmail.com</p>
               <div className="flex gap-3 pt-4">
-                <a
+                <Link
                   href="#"
-                  className="w-11 h-11 rounded-xl bg-semiDark shadow-card"
+                  target="_blank"
+                  className="w-11 h-11 rounded-xl bg-semiDark shadow-card flex justify-center items-center group/fa hover:shadow-none"
                 >
-                  <img src="/facebook.png" alt="" />
-                </a>
-                <a
+                  <FaFacebookSquare className="w-[60%] h-[60%] group-hover/fa:text-primary group-hover/fa:w-[65%] group-hover/you:h-[65%] transition duration-300 ease-in-out" />
+                </Link>
+                <Link
                   href="#"
-                  className="w-11 h-11 rounded-xl bg-semiDark shadow-card"
+                  target="_blank"
+                  className="w-11 h-11 rounded-xl bg-semiDark shadow-card flex justify-center items-center group/ig hover:shadow-none"
                 >
-                  <img src="/instagram.png" alt="" />
-                </a>
-                <a
+                  <FaInstagram className="w-[60%] h-[60%] group-hover/ig:text-[#4f5bd5] group-hover/ig:w-[65%] group-hover/you:h-[65%] transition duration-300 ease-in-out" />
+                </Link>
+                <Link
                   href="#"
-                  className="w-11 h-11 rounded-xl bg-semiDark shadow-card"
+                  target="_blank"
+                  className="w-11 h-11 rounded-xl bg-semiDark shadow-card flex justify-center items-center group/you hover:shadow-none"
                 >
-                  <img src="/twitter.png" alt="" />
-                </a>
+                  <FaYoutube className="w-[60%] h-[60%] group-hover/you:text-[#FF0000] group-hover/you:w-[65%] group-hover/you:h-[65%] transition duration-300 ease-in-out" />
+                </Link>
+                
               </div>
             </div>
           </div>
 
           <hr className="mt-8 mb-4 bg-grey" />
           <p className="text-base text-grey text-center">
-            Copyright &copy; 2023 RpLc Tech
+            Copyright &copy; 2023 RpLc. All rights reserved
           </p>
         </div>
       </div>
