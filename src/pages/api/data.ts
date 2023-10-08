@@ -45,7 +45,7 @@ export default function handler(
       fullname: "Perhotelan",
       url: "perhotelan",
       image: "/ph.jpg",
-      desc: "TKJ adalah sebuah program ilmu kejuruan dibidang teknologi informasi dan komunikasi yang berhubungan dengan kemampuan pemrograman komputer, perakitan komputer dan jaringan komputer, serta pengoperasian perangkat lunak komputer. Lulusan jurusan ini sangat diperhitungkan dalam dunia teknologi dan informasi, terutama perusahaan ataupun startup yang bergerak di bidang pengembangan dan pelayanan TI seperti Bukalapak, Tokopedia, dan lainnya serta dapat membuka usaha sendiri dibidang komputer ataupun bisa juga bekerja di perusahaan dalam bidang pelayanan jaringan. Hal ini disebabkan karena tidak seimbang nya antara tuntutan kebutuhan SDM dalam dunia IT dengan jumlah tenaga kerja yang tersedia.",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nobis, qui quos quod libero enim provident totam doloribus incidunt, repellat repudiandae quibusdam voluptas odit similique iure. Provident quas debitis atque maxime quasi, explicabo, nesciunt non accusamus veniam vero recusandae, neque delectus blanditiis esse quod illo quidem! Fugiat labore unde ducimus dolore et! Rerum possimus autem minima suscipit nobis, sapiente quidem?",
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ export default function handler(
       fullname: "Teknik Kendaraan Ringan",
       url: "teknik-kendaraan-ringan",
       image: "/tkro.jpg",
-      desc: "TKJ adalah sebuah program ilmu kejuruan dibidang teknologi informasi dan komunikasi yang berhubungan dengan kemampuan pemrograman komputer, perakitan komputer dan jaringan komputer, serta pengoperasian perangkat lunak komputer. Lulusan jurusan ini sangat diperhitungkan dalam dunia teknologi dan informasi, terutama perusahaan ataupun startup yang bergerak di bidang pengembangan dan pelayanan TI seperti Bukalapak, Tokopedia, dan lainnya serta dapat membuka usaha sendiri dibidang komputer ataupun bisa juga bekerja di perusahaan dalam bidang pelayanan jaringan. Hal ini disebabkan karena tidak seimbang nya antara tuntutan kebutuhan SDM dalam dunia IT dengan jumlah tenaga kerja yang tersedia.",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nobis, qui quos quod libero enim provident totam doloribus incidunt, repellat repudiandae quibusdam voluptas odit similique iure. Provident quas debitis atque maxime quasi, explicabo, nesciunt non accusamus veniam vero recusandae, neque delectus blanditiis esse quod illo quidem! Fugiat labore unde ducimus dolore et! Rerum possimus autem minima suscipit nobis, sapiente quidem?",
     },
     {
       id: 4,
@@ -61,7 +61,7 @@ export default function handler(
       fullname: "Teknik Bisnis Sepeda Motor",
       url: "teknik-bisnis-sepeda-motor",
       image: "/tbsm.jpg",
-      desc: "TKJ adalah sebuah program ilmu kejuruan dibidang teknologi informasi dan komunikasi yang berhubungan dengan kemampuan pemrograman komputer, perakitan komputer dan jaringan komputer, serta pengoperasian perangkat lunak komputer. Lulusan jurusan ini sangat diperhitungkan dalam dunia teknologi dan informasi, terutama perusahaan ataupun startup yang bergerak di bidang pengembangan dan pelayanan TI seperti Bukalapak, Tokopedia, dan lainnya serta dapat membuka usaha sendiri dibidang komputer ataupun bisa juga bekerja di perusahaan dalam bidang pelayanan jaringan. Hal ini disebabkan karena tidak seimbang nya antara tuntutan kebutuhan SDM dalam dunia IT dengan jumlah tenaga kerja yang tersedia.",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nobis, qui quos quod libero enim provident totam doloribus incidunt, repellat repudiandae quibusdam voluptas odit similique iure. Provident quas debitis atque maxime quasi, explicabo, nesciunt non accusamus veniam vero recusandae, neque delectus blanditiis esse quod illo quidem! Fugiat labore unde ducimus dolore et! Rerum possimus autem minima suscipit nobis, sapiente quidem?",
     },
   ];
 

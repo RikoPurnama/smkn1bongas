@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import Link from "next/link";
 import { BsArrowDownRight } from "react-icons/bs";
 
 
@@ -28,12 +29,12 @@ const Home = () => {
           style={{ backgroundImage: "url(/background.jpg)" }}
           className="w-full max-w-2xl h-[18rem] md:max-w-lg absolute bottom-0 bg-cover bg-top object-cover rounded-t-3xl before:content-[''] before:w-full before:h-full before:max-w-[672px] before:absolute before:bg-dark before:opacity-50 before:rounded-t-3xl z-20"
         >
-          <a
-            href="#"
+          <Link
+            href="/#about"
             className="w-14 h-14 md:w-16 md:h-16 text-light bg-primary border-[.2rem] border-solid border-dark absolute right-6 lg:right-16 -top-7 rounded-full flex justify-center items-center"
           >
             <BsArrowDownRight className="w-6 h-6" />
-          </a>
+          </Link>
         </div>
         <div
           className="hidden md:block absolute w-24 h-28 -translate-x-[17.2rem] translate-y-[37rem] "

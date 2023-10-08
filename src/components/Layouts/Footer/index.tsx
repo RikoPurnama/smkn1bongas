@@ -68,21 +68,21 @@ const Footer = () => {
                   target="_blank"
                   className="w-11 h-11 rounded-xl bg-semiDark shadow-card flex justify-center items-center group/fa hover:shadow-none"
                 >
-                  <FaFacebookSquare className="w-[60%] h-[60%] group-hover/fa:text-primary group-hover/fa:w-[65%] group-hover/you:h-[65%] transition duration-300 ease-in-out" />
+                  <FaFacebookSquare className="w-[55%] h-[55%] group-hover/fa:text-primary group-hover/fa:w-[65%] group-hover/you:h-[65%] transition duration-300 ease-in-out" />
                 </Link>
                 <Link
                   href="#"
                   target="_blank"
                   className="w-11 h-11 rounded-xl bg-semiDark shadow-card flex justify-center items-center group/ig hover:shadow-none"
                 >
-                  <FaInstagram className="w-[60%] h-[60%] group-hover/ig:text-[#4f5bd5] group-hover/ig:w-[65%] group-hover/you:h-[65%] transition duration-300 ease-in-out" />
+                  <FaInstagram className="w-[55%] h-[55%] group-hover/ig:text-[#4f5bd5] group-hover/ig:w-[65%] group-hover/you:h-[65%] transition duration-300 ease-in-out" />
                 </Link>
                 <Link
                   href="#"
                   target="_blank"
                   className="w-11 h-11 rounded-xl bg-semiDark shadow-card flex justify-center items-center group/you hover:shadow-none"
                 >
-                  <FaYoutube className="w-[60%] h-[60%] group-hover/you:text-[#FF0000] group-hover/you:w-[65%] group-hover/you:h-[65%] transition duration-300 ease-in-out" />
+                  <FaYoutube className="w-[55%] h-[55%] group-hover/you:text-[#FF0000] group-hover/you:w-[65%] group-hover/you:h-[65%] transition duration-300 ease-in-out" />
                 </Link>
                 
               </div>

@@ -36,7 +36,7 @@ const Header = () => {
   });
 
   const fixed = scroll
-    ? "fixed bg-nav backdrop-blur-lg shadow-inner"
+    ? "fixed bg-nav backdrop-blur-xl shadow-inner"
     : "absolute";
 
   // for toggle nav
@@ -61,7 +61,7 @@ const Header = () => {
       <header className={`w-full ${fixed} z-[99999] text-light`}>
         <div className="container mx-auto lg:px-44">
           <div className="w-full px-6 flex items-center justify-between relative">
-            <Link href="/" className="text-md lg:text-xl font-bold gap-1 py-4">
+            <Link href="/" className="text-md lg:text-2xl font-bold gap-1 py-4">
               SMK Negeri 1 Bongas{" "}
               <span className="text-sm font-thin text-grey">4.0</span>
             </Link>
@@ -82,36 +82,36 @@ const Header = () => {
             </button>
 
             <nav
-              className={`w-full lg:w-auto ${openNav} lg:scale-100 absolute lg:static left-0 top-full bg-nav lg:bg-transparent rounded-b-2xl nav`}
+              className={`w-full lg:w-auto ${openNav} lg:scale-100 absolute lg:static left-0 top-full bg-nav lg:bg-transparent rounded-b-2xl z-[9999] nav `}
             >
               <ul className="w-full py-6 px-6 lg:px-0 flex flex-col items-center gap-2 rounded-lg lg:flex lg:flex-row lg:gap-8 lg:static lg:py-0">
                 <li className="group/beranda relative lg:py-6 w-full lg:w-auto">
                   <Link
                     href=""
-                    className="hover:text-grey flex items-center gap-1 relative beranda"
+                    className="hover:text-grey flex justify-between items-center gap-1 relative beranda"
                   >
                     Beranda
-                    <FaAngleDown className="w-4 h-4 group-hover/beranda:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out text-grey" />
+                    <FaAngleDown className="w-4 h-4 group-hover/beranda:rotate-180 mt-1 transition duration-200 ease-in-out text-grey" />
                   </Link>
                   <LinkBeranda />
                 </li>
                 <li className="group/tentang relative lg:py-6 w-full lg:w-auto ">
                   <Link
                     href=""
-                    className="hover:text-grey flex items-center gap-1 tentang"
+                    className="hover:text-grey flex justify-between items-center gap-1 tentang"
                   >
                     Tentang kami
-                    <FaAngleDown className="w-4 h-4 group-hover/tentang:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out text-grey" />
+                    <FaAngleDown className="w-4 h-4 group-hover/tentang:rotate-180 mt-1 transition duration-200 ease-in-out text-grey" />
                   </Link>
                   <LinkAboutMe />
                 </li>
                 <li className="group/program relative lg:py-6 w-full lg:w-auto">
                   <Link
                     href=""
-                    className="hover:text-grey flex items-center gap-1 program"
+                    className="hover:text-grey flex justify-between items-center gap-1 program"
                   >
                     Program
-                    <FaAngleDown className="w-4 h-4 group-hover/program:rotate-180 mt-1 translate-x-1 transition duration-200 ease-in-out text-grey" />
+                    <FaAngleDown className="w-4 h-4 group-hover/program:rotate-180 mt-1 transition duration-200 ease-in-out text-grey" />
                   </Link>
                   <LinkProgram />
                 </li>

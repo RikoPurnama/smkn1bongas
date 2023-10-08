@@ -18,15 +18,19 @@ const Companies = () => {
             breakpoints={{
               0: {
                 slidesPerView: 2,
+                spaceBetween: 10,
               },
               640: {
-                slidesPerView: 3, 
+                slidesPerView: 3,
+                spaceBetween: 10,
               },
               768: {
                 slidesPerView: 4,
+                spaceBetween: 20,
               },
               1024: {
                 slidesPerView: 5,
+                spaceBetween: 20,
               },
             }}
             autoplay={{ delay: 4000 }}
