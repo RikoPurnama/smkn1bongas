@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import LinkProfile from "@/components/Fragments/LinkProfile";
+import LinkProfile from "@/components/Fragments/LinkContent";
 
 const DetailjurusanPage = () => {
   const [data, setData] = useState([]);
@@ -24,7 +24,7 @@ const DetailjurusanPage = () => {
     <section className="w-full bg-semiDark">
       <div className="container mx-auto lg:px-44">
         <div className="w-full px-4">
-          <LinkProfile id={id} />
+          <LinkProfile content="Profile Program Studi" route="jurusan" id={id} />
           {data
             .filter((data: any) => data.url === id)
             .map((data: any) => (

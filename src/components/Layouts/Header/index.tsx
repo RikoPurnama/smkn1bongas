@@ -15,6 +15,7 @@ const Header = () => {
     }
   };
 
+
   useEffect(() => {
     window.addEventListener("scroll", () => fixedHeader());
 
@@ -87,7 +88,7 @@ const Header = () => {
               <ul className="w-full py-6 px-6 lg:px-0 flex flex-col items-center gap-2 rounded-lg lg:flex lg:flex-row lg:gap-8 lg:static lg:py-0">
                 <li className="group/beranda relative lg:py-6 w-full lg:w-auto">
                   <Link
-                    href=""
+                    href="/"
                     className="hover:text-grey flex justify-between items-center gap-1 relative beranda"
                   >
                     Beranda

@@ -18,7 +18,7 @@ const Footer = () => {
 
             <div className="w-full md:w-[22%] py-4 md:flex flex-col items-center">
               <h3 className="text-2xl font-bold pb-4">Link</h3>
-              <ul className="ml-3 text-grey flex flex-col gap-2">
+              <ul className="md:ml-3 text-grey flex flex-col gap-2">
                 <li>
                   <Link href="/" className="hover:text-light">
                     Home
