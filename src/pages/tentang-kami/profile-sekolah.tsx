@@ -1,5 +1,5 @@
 import HeadingContentPage from "@/components/Fragments/HeadingContentPage";
-import LinkProfile from "@/components/Fragments/LinkContent";
+import LinkContent from "@/components/Fragments/LinkContent";
 import React from "react";
 
 const ProfileSekolahPages = () => {
@@ -7,7 +7,7 @@ const ProfileSekolahPages = () => {
     <section className="bg-semiDark">
       <div className="container mx-auto lg:px-44">
         <div className="w-full px-4">
-          <LinkProfile content='Profile-Sekolah' route={"tentang-kami"} id={'profile-sekolah'} />
+          <LinkContent content='Profile-Sekolah' route={"tentang-kami"} id={'profile-sekolah'} />
           <div className="w-full py-16 text-light">
             <HeadingContentPage content="Profile Sekolah" />
             <p className="text-base text-grey">

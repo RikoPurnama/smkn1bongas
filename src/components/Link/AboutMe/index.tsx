@@ -21,18 +21,13 @@ const LinkAboutMe = () => {
           </Link>
         </li>
         <li>
-          <Link href="/tentang-kami/profile-sekolah" className="hover:text-grey w-full">
-            Struktur organisasi
-          </Link>
-        </li>
-        <li>
-          <Link href="/tentang-kami/profile-sekolah" className="hover:text-grey">
+          <Link href="/tentang-kami/hubungan-industri" className="hover:text-grey">
             Hubungan Industri
           </Link>
         </li>
         <li>
-          <Link href="/tentang-kami/profile-sekolah" className="hover:text-grey">
-            Prestasi
+          <Link href="/tentang-kami/fasilitas" className="hover:text-grey">
+            Fasilitas
           </Link>
         </li>
       </ul>

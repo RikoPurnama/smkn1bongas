@@ -1,5 +1,5 @@
 import HeadingContentPage from "@/components/Fragments/HeadingContentPage";
-import LinkProfile from "@/components/Fragments/LinkContent";
+import LinkContent from "@/components/Fragments/LinkContent";
 import React from "react";
 
 const VisiMisiPages = () => {
@@ -7,7 +7,7 @@ const VisiMisiPages = () => {
     <section className="bg-semiDark">
       <div className="container mx-auto lg:px-44">
         <div className="w-full px-4">
-          <LinkProfile
+          <LinkContent
             content="Visi & Misi"
             route="tentang-kami"
             id="visi-misi"

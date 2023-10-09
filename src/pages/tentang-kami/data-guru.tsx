@@ -1,5 +1,5 @@
 import HeadingContentPage from '@/components/Fragments/HeadingContentPage'
-import LinkProfile from '@/components/Fragments/LinkContent'
+import LinkContent from '@/components/Fragments/LinkContent'
 import React from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,7 +15,7 @@ const DataGuruPage = () => {
     <section className='bg-semiDark'>
       <div className="container mx-auto lg:px-44">
         <div className="w-full px-4">
-          <LinkProfile content="Data Guru" route="tentang-kami" id="data-guru" />
+          <LinkContent content="Data Guru" route="tentang-kami" id="data-guru" />
           <div className="w-full py-16 text-light">
           <HeadingContentPage content="Data Guru" />
           <Swiper

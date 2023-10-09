@@ -8,10 +8,10 @@ const Home = () => {
     <>
       <section
         style={{ backgroundImage: "url(/background.jpg)" }}
-        className='w-full h-screen lg:h-screen absolute object-cover bg-top bg-cover before:content-[""] before:w-full before:h-screen before:lg:h-screen before:absolute before:bg-transparentDark'
+        className='w-full h-screen lg:h-screen absolute object-cover bg-top bg-cover before:content-[""] before:w-full before:h-screen before:absolute before:bg-transparentDark'
       ></section>
 
-      <section className="relative top-0 w-full h-screen lg:h-screen pt-24 px-6 flex items-center flex-col overflow-hidden">
+      <section className="relative top-0 w-full h-screen pt-24 px-6 flex items-center flex-col overflow-hidden">
         <div className="w-full max-w-xl text-center flex flex-col items-center mt-10">
           <h3 className="text-base text-primary">Welcome To</h3>
           <h2 className="text-lg md:text-xl font-bold text-light ">SMK Negeri 1 Bongas</h2>
