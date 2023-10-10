@@ -4,6 +4,7 @@ import { FaAngleDown } from "react-icons/fa";
 import LinkBeranda from "@/components/Link/Beranda";
 import LinkProgram from "@/components/Link/Program";
 import LinkAboutMe from "@/components/Link/AboutMe";
+import LinkHubungiKami from "@/components/Link/HubungiKami";
 const Header = () => {
   const [scroll, setScroll] = useState(false);
   const fixedHeader = () => {
@@ -23,10 +24,6 @@ const Header = () => {
       if (
         e.target != document.querySelector(".nav") &&
         e.target != document.querySelector(".nav-toggle") &&
-        e.target != document.querySelector(".beranda") &&
-        e.target != document.querySelector(".tentang") &&
-        e.target != document.querySelector(".program") &&
-        e.target != document.querySelector(".profile") &&
         e.target != document.querySelector(".span1") &&
         e.target != document.querySelector(".span2") &&
         e.target != document.querySelector(".span3")
@@ -85,11 +82,11 @@ const Header = () => {
             <nav
               className={`w-full lg:w-auto ${openNav} lg:scale-100 absolute lg:static left-0 top-full bg-nav lg:bg-transparent rounded-b-2xl z-[9999] nav `}
             >
-              <ul className="w-full py-6 px-6 lg:px-0 flex flex-col items-center gap-2 rounded-lg lg:flex lg:flex-row lg:gap-8 lg:static lg:py-0">
+              <ul className="w-full py-6 px-6 lg:px-0 flex flex-col items-center gap-2 rounded-lg lg:flex lg:flex-row lg:gap-4 lg:static lg:py-0">
                 <li className="group/beranda relative lg:py-6 w-full lg:w-auto">
                   <Link
                     href="/"
-                    className="hover:text-grey flex justify-between items-center gap-1 relative beranda"
+                    className="hover:text-grey flex justify-between items-center gap-1 relative"
                   >
                     Beranda
                     <FaAngleDown className="w-4 h-4 group-hover/beranda:rotate-180 mt-1 transition duration-200 ease-in-out text-grey" />
@@ -99,7 +96,7 @@ const Header = () => {
                 <li className="group/tentang relative lg:py-6 w-full lg:w-auto ">
                   <Link
                     href=""
-                    className="hover:text-grey flex justify-between items-center gap-1 tentang"
+                    className="hover:text-grey flex justify-between items-center gap-1"
                   >
                     Tentang kami
                     <FaAngleDown className="w-4 h-4 group-hover/tentang:rotate-180 mt-1 transition duration-200 ease-in-out text-grey" />
@@ -109,12 +106,22 @@ const Header = () => {
                 <li className="group/program relative lg:py-6 w-full lg:w-auto">
                   <Link
                     href=""
-                    className="hover:text-grey flex justify-between items-center gap-1 program"
+                    className="hover:text-grey flex justify-between items-center gap-1"
                   >
                     Program
                     <FaAngleDown className="w-4 h-4 group-hover/program:rotate-180 mt-1 transition duration-200 ease-in-out text-grey" />
                   </Link>
                   <LinkProgram />
+                </li>
+                <li className="group/hubungi relative lg:py-6 w-full lg:w-auto">
+                  <Link
+                    href=""
+                    className="hover:text-grey flex justify-between items-center gap-1"
+                  >
+                    Hubungi Kami
+                    <FaAngleDown className="w-4 h-4 group-hover/hubungi:rotate-180 mt-1 transition duration-200 ease-in-out text-grey" />
+                  </Link>
+                  <LinkHubungiKami />
                 </li>
               </ul>
             </nav>
