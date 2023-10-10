@@ -23,7 +23,10 @@ const Header = () => {
     window.addEventListener("click", (e) => {
       if (
         e.target != document.querySelector(".nav") &&
-        e.target != document.querySelector(".nav-toggle") &&
+        e.target != document.querySelector(".beranda") &&
+        e.target != document.querySelector(".tentang") &&
+        e.target != document.querySelector(".program") &&
+        e.target != document.querySelector(".contact") &&
         e.target != document.querySelector(".span1") &&
         e.target != document.querySelector(".span2") &&
         e.target != document.querySelector(".span3")
@@ -86,7 +89,7 @@ const Header = () => {
                 <li className="group/beranda relative lg:py-6 w-full lg:w-auto">
                   <Link
                     href="/"
-                    className="hover:text-grey flex justify-between items-center gap-1 relative"
+                    className="hover:text-grey flex justify-between items-center gap-1 beranda"
                   >
                     Beranda
                     <FaAngleDown className="w-4 h-4 group-hover/beranda:rotate-180 mt-1 transition duration-200 ease-in-out text-grey" />
@@ -96,7 +99,7 @@ const Header = () => {
                 <li className="group/tentang relative lg:py-6 w-full lg:w-auto ">
                   <Link
                     href=""
-                    className="hover:text-grey flex justify-between items-center gap-1"
+                    className="hover:text-grey flex justify-between items-center gap-1 tentang"
                   >
                     Tentang kami
                     <FaAngleDown className="w-4 h-4 group-hover/tentang:rotate-180 mt-1 transition duration-200 ease-in-out text-grey" />
@@ -106,7 +109,7 @@ const Header = () => {
                 <li className="group/program relative lg:py-6 w-full lg:w-auto">
                   <Link
                     href=""
-                    className="hover:text-grey flex justify-between items-center gap-1"
+                    className="hover:text-grey flex justify-between items-center gap-1 program"
                   >
                     Program
                     <FaAngleDown className="w-4 h-4 group-hover/program:rotate-180 mt-1 transition duration-200 ease-in-out text-grey" />
@@ -116,7 +119,7 @@ const Header = () => {
                 <li className="group/hubungi relative lg:py-6 w-full lg:w-auto">
                   <Link
                     href=""
-                    className="hover:text-grey flex justify-between items-center gap-1"
+                    className="hover:text-grey flex justify-between items-center gap-1 contact"
                   >
                     Hubungi Kami
                     <FaAngleDown className="w-4 h-4 group-hover/hubungi:rotate-180 mt-1 transition duration-200 ease-in-out text-grey" />
