@@ -23,6 +23,7 @@ const Header = () => {
     window.addEventListener("click", (e) => {
       if (
         e.target != document.querySelector(".nav") &&
+        e.target != document.querySelector(".nav-toggle") &&
         e.target != document.querySelector(".beranda") &&
         e.target != document.querySelector(".tentang") &&
         e.target != document.querySelector(".program") &&
@@ -75,7 +76,7 @@ const Header = () => {
                 className={`w-[25px] h-[1px] block bg-light ${toggleNavTop} span1`}
               ></span>
               <span
-                className={`w-[25px] h-[1px] my-2 block bg-light ${toggleNavCenter} span2`}
+                className={`w-[18px] h-[1px] my-2 ml-[7px] block bg-light ${toggleNavCenter} span2`}
               ></span>
               <span
                 className={`w-[25px] h-[1px] block bg-light ${toggleNavBottom} span3`}
