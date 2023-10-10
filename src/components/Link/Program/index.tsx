@@ -18,8 +18,8 @@ const LinkProgram = () => {
           <LinkProgramStudi />
         </li>
         <li>
-          <Link href="/#jurusan" className="hover:text-grey">
-            Kegiatan
+          <Link href="/program/ekstrakulikuler" className="hover:text-grey">
+            Ekstrakulikuler
           </Link>
         </li>
         <li>
