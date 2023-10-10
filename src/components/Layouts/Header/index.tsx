@@ -57,10 +57,11 @@ const Header = () => {
     ? "origin-bottom-left -rotate-45 transition duration-300 ease-in-out"
     : "";
   const openNav = nav ? "scale-100" : "scale-0";
+  const navToHeader = nav ? "fixed bg-nav backdrop-blur-xl shadow-inner" : "";
 
   return (
     <>
-      <header className={`w-full ${fixed} z-[99999] text-light`}>
+      <header className={`w-full ${fixed} z-[99999] text-light ${navToHeader}`}>
         <div className="container mx-auto lg:px-44">
           <div className="w-full px-6 flex items-center justify-between relative">
             <Link href="/" className="text-md lg:text-2xl font-bold gap-1 py-4">
