@@ -11,11 +11,11 @@ const FasilitasPage = () => {
           <div className="w-full py-16 text-light">
             <HeadingContentPage content="Fasilitas" />
             <div className="w-full flex flex-col gap-4 justify-center items-center">
-            <div className="w-[30rem] h-[20rem] flex justify-center items-center bg-grey">Foto Sekolah</div>
+            <div className="w-full max-w-[30rem] h-[20rem] flex justify-center items-center bg-grey">Foto Sekolah</div>
             <div className="w-full py-8 flex flex-wrap justify-center items-center gap-4">
-            <div className="w-[20rem] h-[15rem] flex justify-center items-center bg-grey">3x Kantin</div>
-            <div className="w-[20rem] h-[15rem] flex justify-center items-center bg-grey">Perpustakaan</div>
-            <div className="w-[20rem] h-[15rem] flex justify-center items-center bg-grey">Koprasi</div>
+            <div className="w-full max-w-[20rem] h-[15rem] flex justify-center items-center bg-grey">3x Kantin</div>
+            <div className="w-full max-w-[20rem] h-[15rem] flex justify-center items-center bg-grey">Perpustakaan</div>
+            <div className="w-full max-w-[20rem] h-[15rem] flex justify-center items-center bg-grey">Koprasi</div>
             </div>
             <p>Dan lainnya</p>
             </div>

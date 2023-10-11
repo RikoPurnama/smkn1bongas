@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const HeadingContentPage = ({ content }: { content: string }) => {
   return (
-    <div className="w-full pb-8 flex flex-wrap justify-between items-center">
+    <div className="w-full pb-16 flex flex-wrap justify-between items-center">
       <h2 className="text-2xl md:text-3xl font-semibold">{content}</h2>
       <div className="flex gap-2 items-center">
         <p className="text-base text-grey">Bagikan</p>

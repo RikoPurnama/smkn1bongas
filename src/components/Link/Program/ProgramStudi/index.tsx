@@ -3,7 +3,7 @@ import React from "react";
 
 const LinkProgramStudi = () => {
   return (
-    <div className="w-44 hidden group-hover/profile:block lg:bg-nav py-4 px-4 lg:absolute left-[100%] -top-4 rounded-b-lg">
+    <div className="w-44 hidden group-hover/profile:block hover:block lg:bg-nav py-4 px-4 lg:absolute left-[100%] -top-4 rounded-b-lg">
       <ul className="flex flex-col gap-3">
         <li>
           <Link

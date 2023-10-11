@@ -5,7 +5,7 @@ import { FaAngleDown } from "react-icons/fa";
 
 const LinkProgram = () => {
   return (
-    <div className="w-60 hidden group-hover/program:block lg:bg-nav py-4 pl-4 lg:pl-8 lg:absolute top-[100%] rounded-b-lg border-t-2 border-primary">
+    <div className="w-60 hidden group-hover/program:block hover:block lg:bg-nav py-4 pl-4 lg:pl-8 lg:absolute top-[100%] rounded-b-lg border-t-2 border-primary">
       <ul className="flex flex-col gap-3">
         <li className="relative group/profile">
           <Link
