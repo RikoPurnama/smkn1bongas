@@ -32,6 +32,7 @@ const Home = () => {
           <Link
             href="/#about"
             className="w-14 h-14 md:w-16 md:h-16 text-light bg-primary border-[.2rem] border-solid border-dark absolute right-6 lg:right-16 -top-7 rounded-full flex justify-center items-center"
+            aria-label="scroll down"
           >
             <BsArrowDownRight className="w-6 h-6" />
           </Link>

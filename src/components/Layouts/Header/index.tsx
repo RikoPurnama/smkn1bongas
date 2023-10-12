@@ -51,6 +51,7 @@ const Header = () => {
             <button
               onClick={() => handleToggle()}
               className="py-1 px-1 absolute right-4 lg:hidden nav-toggle"
+              aria-label="nav-toggle"
             >
               <span
                 className={`w-[25px] h-[1px] block bg-light ${toggleNavTop} span1`}
