@@ -26,7 +26,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       boxShadow: {
-        card: "0 0 20px 0 rgba(5, 26, 40, 1)",
+        card: "0 0 20px 0 rgba(0, 0, 0, .4)",
         inner: "inset 0 -1px 1px 0 rgba(5, 26, 40, .3)",
       },
       screen: {

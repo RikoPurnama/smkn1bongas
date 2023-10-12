@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { FaAngleDown } from "react-icons/fa";
-import LinkBeranda from "@/components/Link/Beranda";
-import LinkProgram from "@/components/Link/Program";
-import LinkAboutMe from "@/components/Link/AboutMe";
-import LinkHubungiKami from "@/components/Link/HubungiKami";
-import Navlink from './navlink';
+import Navlink from "./navlink";
 const Header = () => {
   const [scroll, setScroll] = useState(false);
   const fixedHeader = () => {
@@ -17,11 +12,8 @@ const Header = () => {
     }
   };
 
-
   useEffect(() => {
     window.addEventListener("scroll", () => fixedHeader());
-
-    
   });
 
   const fixed = scroll

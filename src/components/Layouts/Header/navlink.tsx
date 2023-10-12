@@ -1,10 +1,11 @@
-import LinkBeranda from "@/components/Link/Beranda";
 import Link from "next/link";
 import React, { useState } from "react";
+import { FaAngleDown } from "react-icons/fa";
 
 const Navlink = () => {
   const [heading, setHeading] = useState('')
   const [program, setProgram] = useState('')
+  
   const Links = [
     {
       name: "Beranda",
@@ -110,13 +111,14 @@ const Navlink = () => {
   return (
     <>
       {Links.map((link) => (
-        <li className="group relative lg:py-6 w-full lg:w-auto">
+        <li key={link.name} className="group relative lg:py-6 w-full lg:w-auto">
           <Link
             href={`${link.to}`}
             onClick={() => setHeading(link.name)}
-            className="hover:text-grey flex justify-between items-center gap-1 beranda"
+            className="hover:text-grey flex justify-between items-center gap-1 "
           >
             {link.name}
+          <FaAngleDown className={`lg:hidden transition duration-300 ease-in-out ${heading === link.name ? 'rotate-180' : ''}`} />
           </Link>
 
           {link.submenu && (
@@ -129,8 +131,9 @@ const Navlink = () => {
                   >
                     <Link href={sublink.to} 
                     onClick={() => setProgram(sublink.name)}
-                    className="hover:text-grey">
+                    className="hover:text-grey flex justify-between items-center">
                       {sublink.name}
+                      {sublink.menu && <FaAngleDown className={`lg:hidden transition duration-300 ease-in-out ${program === sublink.name ? 'rotate-180' : ''}`} />}
                     </Link>
                     {sublink.menu && (
                       <div className={`w-60 group-hover/program:lg:block hover:lg:block lg:bg-nav py-4 px-4 lg:absolute right-[101%] top-1 rounded-b-lg ${program === sublink.name ? 'block lg:hidden' : 'hidden'}`}>
