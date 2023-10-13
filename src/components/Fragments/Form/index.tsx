@@ -1,22 +1,16 @@
 import Button from "@/components/Button";
 import React from "react";
 
-const Form = ({children} : {children: React.ReactNode}) => {
+type formType = {
+  children: React.ReactNode;
+  onsub: (e: React.FormEvent<HTMLFormElement>) => void;
+};
+
+const Form = ({children, onsub} : formType) => {
+
   return (
-    <form action="">
+    <form onSubmit={onsub}>
       {children}
-      <div className=" flex flex-col gap-3 pb-5">
-        <label htmlFor="pertanyaan" className="text-base text-grey">
-          Pertanyaan
-        </label>
-        <textarea
-          name="pertanyaan"
-          id="pertanyaan"
-          rows={5}
-          className=" max-w-2xl text-dark bg-light opacity-80 py-1 px-2 outline-semiDark rounded"
-        ></textarea>
-      </div>
-      <Button buttonText="Kirim Pertanyaan" coloring="bg-primary" />
     </form>
   );
 };

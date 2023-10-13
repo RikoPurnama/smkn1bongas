@@ -1,6 +1,14 @@
 import React from "react";
+import { ValidationError } from "@formspree/react";
 
-const ContentForm = ({labelContent, type, nameId}: any) => {
+type contentFormType = {
+  errors: any;
+  labelContent: string;
+  type: string;
+  nameId: string;
+}
+
+const ContentForm = ({labelContent, type, nameId, errors}: contentFormType) => {
   return (
     <div className=" flex flex-col gap-3 pb-5">
       <label htmlFor="name" className="text-base text-grey">
@@ -12,6 +20,7 @@ const ContentForm = ({labelContent, type, nameId}: any) => {
         id={nameId}
         className=" max-w-2xl text-dark bg-light opacity-80 py-1 px-2 outline-semiDark rounded"
       />
+      <ValidationError prefix={nameId} field={nameId} errors={errors} />
     </div>
   );
 };
