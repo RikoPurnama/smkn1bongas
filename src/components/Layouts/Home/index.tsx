@@ -23,7 +23,7 @@ const Home = () => {
             scelerisque parturient diam morbi in consequat. Turpis tincidunt.
           </p>
           <Link href="/tentang-kami/profile-sekolah" className="bg-primary py-2 px-6 text-base text-white rounded hover:border-2 border-semiDark hover:outline outline-1 outline-primary">
-            Learn More
+            Lainnya
           </Link>
         </div>
 
