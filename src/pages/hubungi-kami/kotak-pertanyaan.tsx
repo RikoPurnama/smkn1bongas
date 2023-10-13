@@ -5,11 +5,9 @@ import ContentForm from '@/components/Fragments/contentForm'
 import Textarea from '@/components/Fragments/contentForm/textarea'
 import React from 'react'
 import { useForm } from '@formspree/react'
-import { useRouter } from 'next/router'
 
 const KotakPertanyaanPage = () => {
   const [state, handleSubmit] = useForm("xwkdabag")
-  const route = useRouter()
   if (state.succeeded) {
     return (
       <section className='py-44 bg-semiDark'>
@@ -32,7 +30,7 @@ const KotakPertanyaanPage = () => {
             <Form onsub={handleSubmit}>
               <ContentForm labelContent="Nama Lengkap" type="text" nameId="nama" errors={state.errors} />
               <ContentForm labelContent="Nomor Telepon" type="tel" nameId="telepon" errors={state.errors} />
-              <ContentForm labelContent="Alamat Surel" type="email" nameId="surel" errors={state.errors} />
+              <ContentForm labelContent="Alamat Email" type="email" nameId="email" errors={state.errors} />
               <ContentForm labelContent="Subyek" type="text" nameId="subyek" errors={state.errors} />
               <Textarea />
               <button type="submit" disabled={state.submitting} className="bg-primary py-2 px-6 text-base text-white rounded hover:border-2 border-semiDark hover:outline outline-1 outline-primary">Kirim Pesan</button>
