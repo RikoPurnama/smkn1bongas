@@ -10,7 +10,7 @@ const KotakPertanyaanPage = () => {
   const [state, handleSubmit] = useForm("xwkdabag")
   if (state.succeeded) {
     return (
-      <section className='py-44 bg-semiDark'>
+      <section className='py-56 bg-semiDark'>
         <div className="container mx-auto lg:px-44">
           <div className="w-full px-4">
             <h1 className='text-4xl text-light font-semibold text-center'>Terima Kasih Telah Menghubungi kami🎉</h1>
