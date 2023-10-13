@@ -13,16 +13,12 @@ export default function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
         />
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
-        />
         <meta name="theme-color" content="#fff" />
         <meta
           name="description"
           content="SMK Negeri 1 Bongas Jl. Raya Margamulya No.276 B, Margamulya, Kec. Bongas, Kabupaten Indramayu, Jawa Barat 45255"
         />
-        <meta name="keywords" content="smkn 1 bongas" />
+        <meta name="keywords" content="smkn 1 bongas, smk negeri 1 bongas, smk bongas" />
         <title>SMK Negeri 1 Bongas</title>
         <link
           rel="apple-touch-icon"
